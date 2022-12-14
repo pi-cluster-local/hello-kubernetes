@@ -3,6 +3,8 @@ kind: Service
 metadata:
   name: hello-kubernetes-scv
   namespace: hello-kubernetes
+  team: forward-deployed-engineering
+  contact: jane.smith@acme.com
 
 spec:
   type: ClusterIP

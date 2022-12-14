@@ -5,7 +5,9 @@ metadata:
   name: hello-kubernetes
   namespace: hello-kubernetes
   labels:
-    app: hello-kubernetes
+    product: hello-kubernetes
+    team: forward-deployed-engineering
+    contact: jane.smith@acme.com
 spec:
   replicas: 3
   selector:
