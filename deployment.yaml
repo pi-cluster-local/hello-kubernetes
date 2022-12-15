@@ -7,7 +7,6 @@ metadata:
   labels:
     product: hello-kubernetes
     team: forward-deployed-engineering
-    contact: jane.smith@acme.com
 spec:
   replicas: 3
   selector:
@@ -18,9 +17,6 @@ spec:
       labels:
         app: hello-kubernetes
     spec:
-      securityContext:
-        runAsUser: 1000
-        runAsNonRoot: true
       containers:
       - name: api-server
         image: nginxdemos/hello
